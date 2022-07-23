@@ -26,7 +26,8 @@
   "scripts": {
     "test": "xv tests",
     "build": "unbuild",
-    "build:stub": "unbuild --stub"
+    "build:stub": "unbuild --stub",
+    "release": "bumpp"
   },
   "dependencies": {
     "for-own": "^0.1.3",
@@ -34,6 +35,7 @@
     "lazy-cache": "^0.2.3"
   },
   "devDependencies": {
+    "bumpp": "^8.2.1",
     "prettier": "^2.7.1",
     "unbuild": "^0.7.6",
     "xv": "^1.1.1"
