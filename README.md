@@ -1,4 +1,4 @@
-# defaults-deep-safe
+# @logotip4ik\_/defaults-deep
 
 **NOTE:** This is a fork of original [defaults-deep](https://github.com/jonschlinkert/defaults-deep) but with vulnerability fixes and hopefully better maintenance 👀
 
