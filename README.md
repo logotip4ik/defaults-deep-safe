@@ -1,4 +1,6 @@
-# defaults-deep [![NPM version](https://badge.fury.io/js/defaults-deep.svg)](http://badge.fury.io/js/defaults-deep)  [![Build Status](https://travis-ci.org/jonschlinkert/defaults-deep.svg)](https://travis-ci.org/jonschlinkert/defaults-deep)
+# defaults-deep-safe
+
+**NOTE:** This is a fork of original [defaults-deep](https://github.com/jonschlinkert/defaults-deep) but with vulnerability fixes and hopefully better maintenance 👀
 
 > Like `extend` but recursively copies only the missing properties/values to the target object.
 
@@ -19,41 +21,48 @@ $ yarn add defaults-deep-safe
 ## Usage
 
 ```js
-import defaults from 'defaults-deep-safe'
+import defaults from "defaults-deep-safe";
 
-defaults({a: {one: 'one'}}, {a: {two: 'two'}})
+defaults({ a: { one: "one" } }, { a: { two: "two" } });
 //=> {a: {one: 'one', two: 'two'}};
 ```
 
 ## Related projects
 
-* [assign-deep](https://github.com/jonschlinkert/assign-deep): Deeply assign the enumerable properties of source objects to a destination object. If a callback… [more](https://github.com/jonschlinkert/assign-deep)
-* [extend-shallow](https://github.com/jonschlinkert/extend-shallow): Extend an object with the properties of additional objects. node.js/javascript util.
-* [merge-deep](https://github.com/jonschlinkert/merge-deep): Recursively merge values in a javascript object.
-* [mixin-deep](https://github.com/jonschlinkert/mixin-deep): Deeply mix the properties of objects into the first object. Like merge-deep, but doesn't clone.
-* [omit-deep](https://github.com/jonschlinkert/omit-deep): Recursively omit the given keys from an object.
+- [assign-deep](https://github.com/jonschlinkert/assign-deep): Deeply assign the enumerable properties of source objects to a destination object. If a callback… [more](https://github.com/jonschlinkert/assign-deep)
+- [extend-shallow](https://github.com/jonschlinkert/extend-shallow): Extend an object with the properties of additional objects. node.js/javascript util.
+- [merge-deep](https://github.com/jonschlinkert/merge-deep): Recursively merge values in a javascript object.
+- [mixin-deep](https://github.com/jonschlinkert/mixin-deep): Deeply mix the properties of objects into the first object. Like merge-deep, but doesn't clone.
+- [omit-deep](https://github.com/jonschlinkert/omit-deep): Recursively omit the given keys from an object.
 
 ## Running tests
 
-Install dev dependencies:
+Install dev dependencies and stub the project ([more about stubbing on antfu.me](https://antfu.me/posts/publish-esm-and-cjs#stubbing)):
 
 ```sh
-$ npm i -d && npm test
+$ yarn
+
+$ yarn build:stub
+
+$ yarn test
 ```
 
 ## Contributing
 
-Pull requests and stars are always welcome. For bugs and feature requests, [please create an issue](https://github.com/jonschlinkert/defaults-deep/issues/new)
+Pull requests and stars are always welcome. For bugs and feature requests, [please create an issue](https://github.com/logotip4ik/defaults-deep-safe/issues)
 
 ## Author
 
 **Jon Schlinkert**
 
-+ [github/jonschlinkert](https://github.com/jonschlinkert)
-+ [twitter/jonschlinkert](http://twitter.com/jonschlinkert)
+- [github/jonschlinkert](https://github.com/jonschlinkert)
+- [twitter/jonschlinkert](http://twitter.com/jonschlinkert)
 
 **Bogdan Kostyuk**
+
 > added vulnerability fix
+
+- [github/logotip4ik](https://github.com/logotip4ik)
 
 ## License
 
