@@ -9,19 +9,19 @@
 Install with [npm](https://www.npmjs.com/)
 
 ```shell
-$ npm i defaults-deep-safe
+$ npm i @logotip4ik_/defaults-deep
 ```
 
 Install with [yarn](https://classic.yarnpkg.com/lang/en/)
 
 ```sh
-$ yarn add defaults-deep-safe
+$ yarn add @logotip4ik_/defaults-deep
 ```
 
 ## Usage
 
 ```js
-import defaults from "defaults-deep-safe";
+import defaults from "@logotip4ik_/defaults-deep";
 
 defaults({ a: { one: "one" } }, { a: { two: "two" } });
 //=> {a: {one: 'one', two: 'two'}};
