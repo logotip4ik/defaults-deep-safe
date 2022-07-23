@@ -18,7 +18,7 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "mocha",
+    "test": "xv tests",
     "build": "unbuild",
     "build:stub": "unbuild --stub"
   },
@@ -28,10 +28,9 @@
     "lazy-cache": "^0.2.3"
   },
   "devDependencies": {
-    "mocha": "^3.5.3",
     "prettier": "^2.7.1",
-    "should": "^13.2.1",
-    "unbuild": "^0.7.6"
+    "unbuild": "^0.7.6",
+    "xv": "^1.1.1"
   },
   "keywords": [
     "copy",
