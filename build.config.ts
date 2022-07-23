@@ -1,7 +1,7 @@
 import { defineBuildConfig } from "unbuild";
 
-module.exports = defineBuildConfig({
+export default defineBuildConfig({
   entries: ["./src/index"],
   clean: true,
-  declaration: true,
+  declaration: false,
 });
