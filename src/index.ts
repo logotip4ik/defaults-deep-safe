@@ -1,6 +1,4 @@
-const isObject = (obj: object) => {
-  return Object.prototype.toString.call(obj) === "[object Object]";
-};
+const isObject = (obj: object) => Object.prototype.toString.call(obj) === "[object Object]";
 
 export default function defaultsDeep(target = {}, ...objects: object[]): object {
   if (!target) return {};
