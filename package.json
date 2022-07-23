@@ -1,7 +1,7 @@
 {
   "name": "@logotip4ik_/defaults-deep",
   "description": "Like `extend` but recursively copies only the missing properties/values to the target object.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "homepage": "https://github.com/logotip4ik/defaults-deep-safe",
   "author": "Bogdan Kostyuk (https://bogdankostyuk.xyz)",
   "repository": "logotip4ik/defaults-deep-safe",
