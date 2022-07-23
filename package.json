@@ -9,16 +9,16 @@
     "url": "https://github.com/logotip4ik/defaults-deep-safe/issues"
   },
   "license": "MIT",
-  "files": [
-    "src/index.ts"
-  ],
-  "main": "src/index.ts",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
       "default": "./dist/index.mjs"
     }
   },
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "type": "module",
   "engines": {
     "node": ">=0.10.0"
