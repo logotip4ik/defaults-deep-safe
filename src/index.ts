@@ -1,7 +1,7 @@
 const isObject = (obj: object) => Object.prototype.toString.call(obj) === "[object Object]";
 
-export default function defaultsDeep(target = {}, ...objects: object[]): object {
-  if (!target) return {};
+export default function defaultsDeep(target: object, ...objects: object[]): object {
+  target = target || {};
 
   function copy(target: object, current: object) {
     Object.entries(current).forEach(([key, value]) => {
